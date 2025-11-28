@@ -3,16 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+height: 10000px;
+}
 ul {
     list-style-type: none;
 }
 a {
     text-decoration: none;
 }
+a:hover {
+  color: #FB2E86;
+  font-size: 18px;
+}
 :root{
     --primary:0D0E43;
 }
 .header{
+    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     padding-top: 47px;
@@ -20,6 +29,7 @@ a {
 }
 
 .header ul {
+    padding-top: 10px ;
     display: flex;
     gap: 35px;
     background-color: var(--primary);
