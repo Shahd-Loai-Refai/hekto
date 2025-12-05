@@ -19,13 +19,25 @@ a:hover {
 :root{
     --primary:0D0E43;
 }
+
+.container {
+    width:100%;
+    padding:0 50px;
+    max-width: 1400px;
+    margin: auto;
+}
+
 .header{
     width: 100%;
     position: fixed;
-    display: flex;
-    justify-content: space-around;
     padding-top: 47px;
     padding-bottom: 35px;
+}
+
+.header .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .header ul {
@@ -52,4 +64,22 @@ a:hover {
     margin: auto;
     height: 24px;
     width: 24px;
+}
+.header .menu{
+    display:none;
+    padding-top: 10px;
+}
+@media screen and (min-width:0px) and (max-width:610px) {
+    .header .search-form ,
+    .header .list {
+        display: none;
+    }
+    .header .menu{
+        display:block;
+    }
+}
+@media screen and (min-width:611px) and (max-width:900px) {
+    .header .search-form {
+        display: none;
+    } 
 }
