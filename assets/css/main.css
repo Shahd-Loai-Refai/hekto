@@ -71,6 +71,76 @@ p{
     color: white;
 }
 
+/* Start featured product section */
+.All_Product {
+    margin-bottom: 128px;
+    text-align: center;
+}
+.All_Product .container h2{
+    font-size: 42px;
+    color: var(--primary);
+}
+.All_Product .row{
+    justify-content: center;
+    gap: 29px;
+}
+.All_Product .Product {
+    margin-top: 48px ;
+    box-shadow: 3px 3px 3px 3px  #00000033;
+}
+.All_Product .Product h2{
+    font-family: Lato;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    color: #FB2E86;
+    font-size: 18px;
+}
+.product_colors {
+    margin-bottom: 12px;
+}
+.product_colors button{
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    width:  10px;
+    height: 4px;
+}
+.product_colors .color_navyBlue{
+    background-color: #00009D;
+}
+.product_colors .color_green{
+    background-color: #05E6B7;
+}
+.product_colors .color_Pink{
+    background-color: #F701A8;
+}
+.product_colors .color_yellow{
+    background-color: #FFEAC1;
+}
+.product_info span{
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #151875;
+    font-family: Josefin Sans;
+}
+.All_Product .product_img {
+    background-color: #F6F7FB;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 236px;
+    width: 270px;
+}
+.product_info{
+    text-align: center;
+}
+.product_colors{
+    text-align: center;
+}
+
+/* End featured product section */
+
 /* Start background_img */
 .background_img{
     background-image: url("../image/background.png");
@@ -171,12 +241,20 @@ ul p{
         display: none;
     } 
 }
-@media screen and (min-width:850px) and (max-width:1260px) { 
+@media screen and (min-width:850px) and (max-width:1267px) { 
+    .All_Product .row .Product{
+        display: block;
+        width: 20%;
+    }
+    .All_Product .product_img{
+        width: 100%;
+        margin: auto;
+    }
     .footer .container .row .footer-right-side  {
         text-align: center;
         margin: auto;
         display: block;
-    } 
+    }
     .footer .container .row .footer-right-side .logo {
         margin: auto;
     }
