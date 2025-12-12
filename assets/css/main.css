@@ -244,7 +244,7 @@ ul p{
 @media screen and (min-width:850px) and (max-width:1267px) { 
     .All_Product .row .Product{
         display: block;
-        width: 20%;
+        width: 40%;
     }
     .All_Product .product_img{
         width: 100%;
