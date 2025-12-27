@@ -114,24 +114,49 @@ a:hover {
 /* End hero section */ 
 
 /* Start featured product section */
-.FeaturedProducts {
+.FeaturedProducts 
+,.Shopex-Offer{
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
 }
-.FeaturedProducts .container h2{
+.FeaturedProducts .container h2
+,.Shopex-Offer .container h2{ 
+    text-align: center;
+    padding-bottom: 55px;
     font-size: 42px;
     color: var(--primary);
 }
-.FeaturedProducts .row{
+.FeaturedProducts .row
+,.Shopex-Offer .row{
     justify-content: center;
     gap: 29px;
 }
-.FeaturedProducts .Product {
-    margin-top: 48px ;
+.Shopex-Offer p{
+    font-size: 16px;
+    font-family: Lato;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.Product {
     box-shadow: 3px 3px 3px 3px  #00000033;
 }
+.Shopex-Offer-item{
+    padding: 55px 20px 45px;
+    box-shadow: 3px 3px 3px 3px  #00000033;
+}
+.Shopex-Offer-item .Shopex-Offer_img{
+    margin: auto;
+    width: 65px;
+    height: 65px;
+}
+.Shopex-Offer-item h3{
+    padding-top: 22px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
 .FeaturedProducts .product_img {
+    margin: auto;
     background-color: #F6F7FB;
     position: relative;
     display: flex;
@@ -158,7 +183,7 @@ a:hover {
 .FeaturedProducts .Product:hover{
     background-color: #2F1AC4;
 }
-.FeaturedProducts .Product:hover .product_details h2 
+.FeaturedProducts .Product:hover .product_details h3 
 ,.FeaturedProducts .Product:hover .product_info span{
     color: white; 
 }
@@ -166,10 +191,10 @@ a:hover {
 ,.FeaturedProducts .Product:hover .hover-btn{
     display: block;
 }
-.FeaturedProducts .Product h2{
+.FeaturedProducts .Product h3{
     font-family: Lato;
-    margin-top: 15px;
-    margin-bottom: 12px;
+    padding-top: 15px;
+    padding-bottom: 12px;
     color: #FB2E86;
     font-size: 18px;
 }
@@ -301,9 +326,11 @@ a:hover {
         display: block;
         width: 40%;
     }
-    .FeaturedProducts .product_img{
+    .FeaturedProducts .row .Product .product_img{
         width: 100%;
-        margin: auto;
+    }
+    .Shopex-Offer .row {
+        flex-wrap: nowrap;
     }
     .footer .container .row .footer-right-side  {
         text-align: center;
@@ -317,6 +344,7 @@ a:hover {
         margin-top: 50px;
         width: 100%;
     }
+
 }
 @media screen and (min-width:0px) and (max-width:849px) { 
     .footer .container .row .footer-left-side  .list {
@@ -346,6 +374,7 @@ a:hover {
     }
 }
 @media screen and (min-width:850px) and (max-width:1235px) { 
+
     .hero img{
         width: 500px;
     }
@@ -365,6 +394,22 @@ a:hover {
     }
     .hero .hero-rightSide p{
         font-size: 11.11px;
+    }
+}
+@media screen and (min-width:500px) and (max-width:688px) { 
+    .Shopex-Offer .row .Shopex-Offer-item{
+        width: 45%;
+    }
+    .Shopex-Offer .container h2{
+        font-size: 35px;
+    }
+}
+@media screen and (min-width:0px) and (max-width:499px) { 
+    .FeaturedProducts .container h2{
+        font-size: 30px;
+    }
+    .Shopex-Offer .container h2{
+        font-size: 27px;
     }
 }
 @media screen and (min-width:320px) and (max-width:688px) { 
