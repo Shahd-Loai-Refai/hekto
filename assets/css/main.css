@@ -48,6 +48,7 @@ a:hover {
     padding-bottom: 35px;
     position: sticky;
     top: 0;
+    z-index: 1;
     background-color: white;
 }
 .header ul {
@@ -115,13 +116,15 @@ a:hover {
 
 /* Start featured product section */
 .FeaturedProducts 
-,.Shopex-Offer{
+,.Shopex-Offer
+,.TrendingProducts{
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
 }
 .FeaturedProducts .container h2
-,.Shopex-Offer .container h2{ 
+,.Shopex-Offer .container h2
+,.TrendingProducts .container h2{ 
     text-align: center;
     padding-bottom: 55px;
     font-size: 42px;
@@ -150,10 +153,12 @@ a:hover {
     width: 65px;
     height: 65px;
 }
-.Shopex-Offer-item h3{
+.Shopex-Offer-item h3
+,.TrendingProducts h3{
     padding-top: 22px;
     padding-bottom: 20px;
     font-size: 18px;
+    font-family: Lato;
 }
 .FeaturedProducts .product_img {
     margin: auto;
@@ -263,6 +268,27 @@ a:hover {
 }
 /* End background_img */
 
+/* Start TrendingProduct */
+.TrendingProduct_img{
+    margin: 10px;
+}
+.TrendingProducts{
+    text-align: center;
+}
+.TrendingProducts .Product{
+    margin-bottom: 20px;
+}
+.TrendingProducts .TrendingProduct-info{
+    padding-bottom: 20px;
+}
+.TrendingProducts .old-price{
+    color: gray;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 2px;
+    padding-left: 12px;
+}
+/* End TrendingProduct */
+
 /* Start footer */
 .footer{
     padding-top: 105px;
@@ -322,11 +348,13 @@ a:hover {
     } 
 }
 @media screen and (min-width:850px) and (max-width:1267px) { 
-    .FeaturedProducts .row .Product{
+    .FeaturedProducts .row .Product,
+    .TrendingProducts .row .Product{
         display: block;
         width: 40%;
     }
-    .FeaturedProducts .row .Product .product_img{
+    .FeaturedProducts .row .Product .product_img
+    ,.TrendingProducts .row .Product img{
         width: 100%;
     }
     .Shopex-Offer .row {
@@ -405,7 +433,8 @@ a:hover {
     }
 }
 @media screen and (min-width:0px) and (max-width:499px) { 
-    .FeaturedProducts .container h2{
+    .FeaturedProducts .container h2
+    ,.TrendingProducts .container h2{
         font-size: 30px;
     }
     .Shopex-Offer .container h2{
