@@ -124,7 +124,8 @@ a:hover {
 }
 .FeaturedProducts .container h2
 ,.Shopex-Offer .container h2
-,.TrendingProducts .container h2{ 
+,.TrendingProducts .container h2
+,.LeatestBlog .container h2{ 
     text-align: center;
     padding-bottom: 55px;
     font-size: 42px;
@@ -289,6 +290,45 @@ a:hover {
 }
 /* End TrendingProduct */
 
+/* Start Leatest Blog */
+.LeatestBlog{
+    padding-bottom: 50px;
+}
+.LeatestBlog .Product{
+    padding-bottom: 35px;
+    margin-bottom: 20px;
+}
+.LeatestBlog .Product .LeatestBlog-info{
+    padding-top: 19px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+.LeatestBlog-info span{
+    padding-right: 16px;
+    font-family: Josefin Sans;
+}
+.LeatestBlog-info p{
+    padding-bottom: 14px;
+}
+.LeatestBlog-info h3{
+    font-family: Josefin Sans;
+    padding-bottom: 17px;
+    padding-top: 31px;
+    color:#151875;
+}
+.LeatestBlog .LeatestBlog-info a{
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: Lato;
+    color:#151875;
+}
+
+.LeatestBlog .Product:hover h3
+,.LeatestBlog .Product:hover a{
+    color:#FB2E86;
+
+}
+/* End Leatest Blog */
 /* Start footer */
 .footer{
     padding-top: 105px;
@@ -402,7 +442,6 @@ a:hover {
     }
 }
 @media screen and (min-width:850px) and (max-width:1235px) { 
-
     .hero img{
         width: 500px;
     }
@@ -464,3 +503,53 @@ a:hover {
         padding-top: 20px;
     }
 }
+
+@media screen and (min-width:0px) and (max-width:1235px) { 
+    .LeatestBlog .Product .product_img img{
+        width: 100%;
+    }
+    .LeatestBlog-info span{
+        padding-right: 3px;
+        font-size: 10.9px;
+    }
+    .LeatestBlog-info p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .LeatestBlog-info h3{
+        font-size: 16px;
+        text-align: center;
+    }
+    .LeatestBlog .LeatestBlog-info a{
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1235px) { 
+        .LeatestBlog .Product{
+        width: calc((100% - 190px) / 3);
+    }
+}
+@media screen and (min-width:800px) and (max-width:850px) {
+    .LeatestBlog-info span{
+        padding-right: 0px;
+        font-size: 9.5px;
+    }
+    .LeatestBlog-info p{
+        font-size: 13px;
+    }
+    .LeatestBlog-info h3{
+        font-size: 15px;
+    }
+    .LeatestBlog .LeatestBlog-info a{
+        font-size: 11px;
+    }
+ }
+ @media screen and (min-width:0px) and (max-width:430px){
+    .LeatestBlog .container h2{
+        font-size: 30px;
+    }
+ }
+
+
