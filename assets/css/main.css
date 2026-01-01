@@ -31,6 +31,13 @@ button{
     margin-top: 30px;
     display: none;
 }
+.old-price{
+    text-decoration-line: line-through;
+    text-decoration-thickness: 2px;
+    padding-left: 12px;
+}
+
+
 :root{
     --primary:0D0E43;
 }
@@ -55,7 +62,8 @@ button{
     z-index: 1;
     background-color: white;
 }
-.header ul {
+.header ul
+,.LeatestProducts ul {
     padding-top: 10px ;
     display: flex;
     gap: 35px;
@@ -131,7 +139,8 @@ button{
 ,.Shopex-Offer .container h2
 ,.TrendingProducts .container h2
 ,.LeatestBlog .container h2
-,.TopCategoriesProducts .container h2{ 
+,.TopCategoriesProducts .container h2
+,.LeatestProducts .container h2{ 
     text-align: center;
     padding-bottom: 55px;
     font-size: 42px;
@@ -243,6 +252,7 @@ button{
 }
 
 /* End featured product section */
+
 /* Start Top Categories section*/
 .TopCategories_img{
     position: relative;
@@ -327,11 +337,110 @@ button{
 }
 .TrendingProducts .old-price{
     color: gray;
-    text-decoration-line: line-through;
-    text-decoration-thickness: 2px;
-    padding-left: 12px;
 }
 /* End TrendingProduct */
+
+/* Start Leatest Products section*/
+.LeatestProducts {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.LeatestProducts ul {
+    justify-content: center;
+    align-items: center;
+}
+.LeatestProducts ul a{
+    font-size: 18px;
+}
+.LeatestProduct{
+    padding-top: 50px;
+}
+.LeatestProduct_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F7F7;
+}
+.LeatestProduct_icon {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    opacity: 0;
+    padding-top: 115px;
+}
+.LeatestProduct_icon img{ 
+    width: 13.85px;
+    height: 13.85px;
+}
+.cart{
+    border-radius: 50%;
+    padding: 1px;
+    background-color: #eeeff4;
+}
+.LeatestProduct_img {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.LeatestProduct_mainImg{
+    width: 245px;
+    height: 245px;
+}
+.LeatestProduct_img{
+    position: relative;
+}
+.LeatestProduct_overloay{
+    opacity: 0;
+    width: 84.872px;
+    height: 56.725px;
+    position: absolute; 
+    top: 20px;
+    left: -25px;
+}
+.LeatestProduct_img span{
+    opacity: 0;
+    position: absolute;
+    top: 38px;
+    left: 5px;
+    transform: rotate(-18.119deg);
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    color: white;
+}
+.LeatestProduct_top:hover {
+    background-color: white;
+}
+.LeatestProduct_top:hover .LeatestProduct_mainImg{
+    border: 1px solid #000;
+}
+.LeatestProduct_top:hover .LeatestProduct_icon
+,.LeatestProduct_top:hover .LeatestProduct_overloay
+,.LeatestProduct_top:hover .LeatestProduct_img span{
+    opacity: 1;
+}
+.LeatestProducts .LeatestProduct_info{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.LeatestProduct_info h3{
+    color: #151875;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    border-bottom: 2px solid #EEEFFB;
+    
+}
+.LeatestProduct_info span{
+    padding-left: 107px ;
+    color: #151875;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+}
+.LeatestProduct_info .old-price{
+    padding-left: 12px;
+    color: #FB2448;
+    font-size: 12px;
+}
+/* End Leatest Products section */ 
 
 /* Start Leatest Blog */
 .LeatestBlog{
@@ -359,7 +468,8 @@ button{
     padding-top: 31px;
     color:#151875;
 }
-.LeatestBlog .LeatestBlog-info a{
+.LeatestBlog .LeatestBlog-info a
+,.LeatestProducts a{
     text-decoration: underline;
     font-size: 16px;
     font-family: Lato;
@@ -367,7 +477,8 @@ button{
 }
 
 .LeatestBlog .Product:hover h3
-,.LeatestBlog .Product:hover a{
+,.LeatestBlog .Product:hover a
+,.LeatestProducts a:active{
     color:#FB2E86;
 
 }
@@ -616,5 +727,43 @@ button{
     }
 
 }
- 
-
+@media screen and (min-width:520px) and (max-width:793px){
+    .LeatestProducts ul a{
+    font-size: 16px;
+    }
+    .LeatestProducts .container h2{
+        font-size: 37px;
+    }
+}
+@media screen and (min-width:0px) and (max-width:519px){
+    .LeatestProducts ul a{
+        font-size: 14px;
+    }
+    .LeatestProducts ul{
+        text-align: center;
+    }
+    .LeatestProducts .container h2{
+        font-size: 33px;
+    }
+    .LeatestProduct_info h3{
+        font-size: 12px;
+    }
+    .LeatestProduct_info span{
+        padding-left: 70px ;
+    }
+}
+@media screen and (min-width:0px) and (max-width:355px){
+    .LeatestProduct_img .LeatestProduct_mainImg{
+        width: 200px;
+        height: 200px;
+    }
+    .LeatestProducts .container h2{
+        font-size: 30px;
+    }
+    .LeatestProduct_info h3{
+        font-size: 10px;
+    }
+    .LeatestProduct_info span{
+        padding-left: 50px ;
+    }
+}
